@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('Background.png'); 
+    background-size: cover;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo h1 {
+    color: #6495ED;
+}
+
+.logo img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #6495ED;
+    font-weight: bold;
+    padding: 10px;
+    font-size: 18px;
+}
+
+nav ul li a :hover{
+    text-decoration: none;
+    color: #112955;
+    font-weight: bold;
+
+}
+
+nav :hover {
+    color: grey;
+}
+
+.event-calendar {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    padding: 2rem;
+    
+}
+
+.event-calendar{
+    justify-content: left;
+    align-items: flex;
+}
+
+.img{
+    max-width: 100%;
+    height: auto;
+}
+
+.card {
+    justify-items: right;
+    align-items: flex;
+    padding: 20px;
+}
+
+.event-card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    height: 100px;
+    padding: auto;
+    margin: 20px;
+}
+
+.event-card {
+    background-color: #ffffff;
+    padding: 15px 20px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+    padding: 20px;
+}
+
+.event-card:hover {
+    transform: translateY(-10px);
+}
+
+.event-date {
+    font-size: 1em;
+    color: #3366cc;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.event-title {
+    font-size: 1.0em;
+    color: #333333;
+    font-weight: bold;
+    line-height: 20px;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav {
+        margin-top: 0.5rem;
+    }
+
+    .img{
+        width: 100%;
+    }
+}

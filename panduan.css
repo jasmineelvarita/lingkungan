@@ -1,0 +1,148 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-image: url('panduanbg.jpeg');
+    background-position: center center;
+    background-size: cover; 
+    background-repeat: no-repeat;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo h1 {
+    color: #6495ED;
+}
+
+.logo img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    
+}
+
+nav ul li {
+    margin-left: 20px;
+    
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #6495ED;
+    font-weight: bold;
+    padding: 10px;
+    font-size: 18px;
+}
+
+nav ul li a :hover{
+    text-decoration: none;
+    color: #112955;
+    font-weight: bold;
+
+}
+
+nav :hover {
+    color: grey;
+}
+
+.helm {
+    height: 100vh; 
+    padding: 100px 20px;
+    text-align: center;
+    color: #fff;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 90px;
+    width: 100%;
+    max-width: 1900px;
+    margin-top: -50px;
+}
+
+.card {
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+    justify-content: right;
+    align-items: flex;
+}
+
+
+
+.card img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 30px;
+}
+
+
+.card h1 {
+    font-size: 20px;
+    font-weight: 100px;
+    color: #585fbb;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card {
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+    justify-content: right;
+    align-items: flex;
+}
+
+
+@media (max-width: 768px) {
+    .img{
+        width: 100%;
+    }
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav {
+        margin-top: 0.5rem;
+    }
+
+    .content {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    }
+    
+}

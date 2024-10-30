@@ -1,0 +1,115 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo h1 {
+    color: #6495ED;
+}
+
+.logo img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #6495ED;
+    font-weight: bold;
+    padding: 10px;
+    font-size: 18px;
+}
+
+nav ul li a :hover{
+    text-decoration: none;
+    color: #112955;
+    font-weight: bold;
+
+}
+
+nav :hover {
+    color: grey;
+}
+
+.hero {
+    background-image: url('homebg.jpg'); 
+    background-position: center center;
+    background-size: cover; 
+    background-repeat: no-repeat;
+    height: 100vh; 
+    padding: 100px 20px;
+    text-align: center;
+    color: #fff;
+}
+
+
+
+.h2 {
+    font-size: 2.5em;
+    margin-top: -80px;
+}
+
+.kon{
+    display: flex;
+    text-align: left;
+    font-size: 19px;
+    margin-top: 20px;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        background-size: cover;
+    }
+    .h2 {
+        font-size: 2.5em;
+    }
+
+    .kon {
+        font-size: 1em;
+    }
+
+  
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav {
+        margin-top: 0.5rem;
+    }
+
+    .img{
+        width: 100%;
+    }
+}
